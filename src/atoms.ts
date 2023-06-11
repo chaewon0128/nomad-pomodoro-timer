@@ -1,4 +1,5 @@
 import { atom } from "recoil";
+import { INITIAL_TIME } from "./constant";
 
 
 export const buttonState = atom({
@@ -18,6 +19,6 @@ export const goalState = atom({
 
 export const timerState = atom({
     key: "timer",
-    default: 5
+    default: INITIAL_TIME
 });
 
