@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { styled } from 'styled-components';
-import { goalState, roundState, timerState } from '../atoms';
+import { goalState, roundState } from '../atoms';
 const Container = styled.div`
 display: flex;
 position: absolute;
@@ -30,10 +29,7 @@ const Goal = styled(Round)`
 `
 export default function Result() {
     const round = useRecoilValue(roundState)
-    const [goal, setGoal] = useRecoilState(goalState)
-    const timer = useRecoilValue(timerState);
-
-
+    const goal = useRecoilValue(goalState)
 
 
     return (
