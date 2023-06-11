@@ -99,7 +99,7 @@ export default function Timer() {
     return (
         <>
             <Container>
-                <Box variants={boxVariant} initial="start" animate="end" key={minutes}>{minutes}</Box>
+                <Box variants={boxVariant} initial="start" animate="end" key={minutes === "00" ? minutes = "25" : minutes} >{minutes}</Box>
                 <span>:</span>
                 <Box variants={boxVariant} initial="start" animate="end" key={secondes}>{secondes}</Box>
             </Container>

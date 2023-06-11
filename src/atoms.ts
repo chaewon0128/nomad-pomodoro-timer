@@ -20,5 +20,5 @@ export const goalState = atom({
 export const timerState = atom({
     key: "timer",
     default: INITIAL_TIME
-});
 
+})
